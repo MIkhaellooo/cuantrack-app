@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@import 'tailwind-scrollbar-hide/v4';
+@import "@fontsource/plus-jakarta-sans/400.css"; 
+@import "@fontsource/plus-jakarta-sans/500.css"; 
+@import "@fontsource/plus-jakarta-sans/700.css";
+
+@layer base {
+  html, body {
+    
+    @apply select-none; 
+    cursor: default;
+    @apply selection:bg-[#9E9494]
+  }
+  input, textarea {
+    -webkit-spellcheck: false;
+  }
+  button, input, textarea, select {
+    @apply outline-none ring-0;
+  }
+
+  *:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+:root {
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+ 
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.recharts-wrapper:focus {
+    outline: none !important;
+}
+
+.recharts-surface:focus {
+    outline: none !important;
+}

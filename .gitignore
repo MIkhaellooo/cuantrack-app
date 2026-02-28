@@ -1,0 +1,25 @@
+cuantrack-final.AppImage
+build/
+out/
+dist/
+node_modules/
+*.db
+node_modules
+dist
+dist-electron
+.env
+*.AppImage
+dist/
+release/
+# Folder hasil build
+out/
+build/
+dist/
+
+# Database (biar data pribadi lu gak kesebar)
+*.db
+
+# File gede lainnya
+*.AppImage
+*.exe
+*.zip
