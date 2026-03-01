@@ -36,9 +36,10 @@ function createWindow(): void {
     width: 900,
     height: 670,
     show: false,
+    icon: icon,
     title: "Cuan Track",
     autoHideMenuBar: true,
-    ...(process.platform === 'linux' ? { icon } : {}),
+    ...(process.platform === 'linux' ? { icon, wmClass: 'com.cuantrack.app' } : {}),
     webPreferences: {
       spellcheck:false,
       preload: join(__dirname, '../preload/index.js'),
@@ -133,10 +134,17 @@ function createWindow(): void {
 
 }
 
+if (process.platform === 'linux') {
+  app.name = 'Cuan Track'
+}
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
+  if (process.platform === 'linux') {
+    app.setName('Cuan Track')
+  }
+  
   // Set app user model id for windows
   electronApp.setAppUserModelId('com.cuantrack.app')
   app.name = "Cuan Track"

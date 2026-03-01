@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Stop guessing, start gaining. Track your hustle, master your cash, and watch your cuan grow in real-time",
   "main": "./out/main/index.js",
-  "author": "mikhaello.com",
+  "author": "MIkhaellooo <mikhaelgiovannoo@gmail.com>",
   "homepage": "https://electron-vite.org",
   "scripts": {
     "format": "prettier --write .",
@@ -58,7 +58,8 @@
           "Name": "Cuan Track",
           "GenericName": "Money Tracker",
           "artifactName": "${productName}.${ext}",
-          "StartupWMClass": "cuan-track"
+          "StartupWMClass": "cuan-track",
+          "Icon": "cuan-track"
         }
       }
     },
