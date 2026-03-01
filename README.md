@@ -1,4 +1,4 @@
-# cuan-track-0.2
+# cuan-track
 
 An Electron application with React and TypeScript
 
