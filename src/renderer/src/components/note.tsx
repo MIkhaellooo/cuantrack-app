@@ -37,7 +37,7 @@ const Note = ({refreshData, onSave, onClose, setButton}:Prop) => {
 
     const handleSubmit = async() => {
         if (isInput.amount.trim() === '' || isNaN(Number(isInput.amount)) ||isInput.category.trim() === '' || isInput.type.trim() === '' || isInput.title.trim() === '') {
-            setError("Isi data, Bro")
+            setError("Fill in the data, Bro!")
 
             setTimeout(() =>{
                 setError(null)
@@ -118,13 +118,13 @@ const Note = ({refreshData, onSave, onClose, setButton}:Prop) => {
                     </div>
                     <div id="button-cage" className="flex gap-2 py-5">
                         <button
-                        className={`bg-[#2D6A4F] p-3 rounded-md shadow-lg transition-all text-white
+                        className={`bg-[#2D6A4F] antialiased p-4 rounded-xl text-sm shadow-lg transition-all text-white
                         duration-200 ease-in-out hover:scale-100 hover:bg-[#40916C] active:scale-95 active:bg-[#1B4332]
                         ${isInput.type === 'Income' ? 'ring-1 ring-white scale-90' : 'opacity-100'}`}
                         onClick={() => handleType('Income')}
                         >Income</button>
                         <button
-                        className={`bg-[#800E13] p-3 rounded-md shadow-lg transition-all text-white
+                        className={`bg-[#800E13] p-4 antialiased rounded-xl text-sm shadow-lg transition-all text-white
                         duration-200 ease-in-out hover:scale-100 hover:bg-[#A4161A] active:scale-95 active:bg-[#660708]
                         ${isInput.type === 'Expense' ? 'ring-1 ring-white scale-90' : 'opacity-100'}`}
                         onClick={() => handleType('Expense')}

@@ -139,7 +139,7 @@ const Lib = ({ refreshAll, data }: LibProps) => {
                     <div className="relative flex-1">
                         <input 
                             type="text"
-                            placeholder="Cari judul transaksi..."
+                            placeholder="Search Transactions"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
                             className="w-full pl-10 pr-4 py-2 bg-[#F3F2F2] border border-[#D1CCCC] rounded-md outline-none text-sm"
@@ -199,7 +199,7 @@ const Lib = ({ refreshAll, data }: LibProps) => {
             <AnimatePresence>
                 {confirmOpen && (
                     <ConfirmModal 
-                        message="Yakin mau hapus data ini, Bro?" 
+                        message="Wanna to delete this data ?" 
                         onConfirm={handleConfirmDelete} 
                         onClose={() => setConfirmOpen(false)} 
                     />

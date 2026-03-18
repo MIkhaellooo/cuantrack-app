@@ -27,13 +27,13 @@ const ConfirmModal = ({ message, onConfirm, onClose }: ConfirmProps) => {
                         onClick={onClose}
                         className="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition-all"
                     >
-                        Batal
+                        No
                     </button>
                     <button 
                         onClick={() => { onConfirm(); onClose(); }}
                         className="px-4 py-2 bg-[#9E9494] text-white rounded-md hover:bg-[#867979] transition-all"
                     >
-                        Hapus!
+                        Delete!
                     </button>
                 </div>
             </motion.div>
