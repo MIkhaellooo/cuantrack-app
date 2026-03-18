@@ -2,6 +2,7 @@
   "name": "cuan-track",
   "productName": "Cuan Track",
   "version": "1.0.0",
+  "synopsis": " ",
   "description": "Stop guessing, start gaining. Track your hustle, master your cash, and watch your cuan grow in real-time",
   "main": "./out/main/index.js",
   "author": "MIkhaellooo <mikhaelgiovannoo@gmail.com>",
